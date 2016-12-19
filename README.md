@@ -27,8 +27,18 @@
 
 ```
 cd $GOPATH;
-git clone http://github.com/zheng-ji/goTcpProxy;
-make
+git clone https://github.com/zheng-ji/goTcpProxy.git;
+cd goTcpProxy
+```
+说明下
+1.事先我并没有安装go；然后在安装go过程中发现不少地方巨坑！
+2.install go-go1.4（你这个程序跑go高版本会报错！）
+3.需要配置$GOROOT $GOPATH $PATH
+4.缺失依赖包
+  go get stathat.com/c/consistent
+  go get launchpad.net/goyaml
+  go get github.com/Sirupsen/logrus
+5.编译 make
 ```
 
 ### How To Use
